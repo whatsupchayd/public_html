@@ -1,24 +1,39 @@
 @font-face {
-  font-family: CircularStd-Book;
-  src: url("/static/fonts/CircularStd-Book.otf") format("opentype");
-  font-family: Basis-Off-White;
-  src: url("/static/fonts/basis-grotesque-off-white.eot");
-  src: url("/static/fonts/basis-grotesque-off-white.ttf");
-  src: url("/static/fonts/basis-grotesque-off-white.woff");
-  src: url("/static/fonts/basis-grotesque-off-white.woff2");
-  font-family: Basis;
-  src: url("static/fonts/basis-grotesque-regular.eot");
-  src: url("static/fonts/basis-grotesque-regular.ttf");
-  src: url("static/fonts/basis-grotesque-regular.woff");
-  src: url("static/fonts/basis-grotesque-regular.woff2");
-  font-family: Lyon;
-  src: url("static/fonts/LyonDisplay-Light-Web.eot");
-  src: url("static/fonts/LyonDisplay-Light-Web.woff");
-  src: url("static/fonts/LyonDisplay-Light-Web.woff2");
+  font-family: 'Graces Sans';
+  src: url('/static/fonts/basis-grotesque-regular.eot');
+  src: url('/static/fonts/basis-grotesque-regular.eot?#iefix') format('embedded-opentype'),
+       url('/static/fonts/basis-grotesque-regular.woff') format('woff'),
+       url('/static/fonts/basis-grotesque-regular.woff2') format('woff2'),
+       url('/static/fonts/basis-grotesque-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
+@font-face {
+  font-family: 'Graces Sans Off White';
+  src: url('/static/fonts/basis-grotesque-off-white.eot');
+  src: url('/static/fonts/basis-grotesque-off-white.eot?#iefix') format('embedded-opentype'),
+       url('/static/fonts/basis-grotesque-off-white.woff') format('woff'),
+       url('/static/fonts/basis-grotesque-off-white.woff2') format('woff2'),
+       url('/static/fonts/basis-grotesque-off-white.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Graces Serif';
+  src: url('/static/fonts/LyonDisplay-Light-Web.eot');
+  src: url('/static/fonts/LyonDisplay-Light-Web.eot?#iefix') format('embedded-opentype'),
+       url('/static/fonts/LyonDisplay-Light-Web.woff2') format('woff2'),
+       url('/static/fonts/LyonDisplay-Light-Web.woff') format('woff');
+  font-weight:  300;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+
 html {
-  font-family: Basis, sans-serif;
+  font-family: 'Graces Sans', sans-serif;
   background: #fff;
   font-size: 17px;
 }
@@ -143,8 +158,9 @@ body {
 }
 
 h1 {
-  font-size: 48px;
-  line-height: 48px;
+  font-family: "Graces Serif";
+  font-size: 64px;
+  line-height: 1em;
   margin: 0 0 10px 0;
   color: #2D3854;
   text-align: center;
