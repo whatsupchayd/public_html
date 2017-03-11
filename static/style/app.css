@@ -5,7 +5,7 @@
        url('/static/fonts/basis-grotesque-regular.woff') format('woff'),
        url('/static/fonts/basis-grotesque-regular.woff2') format('woff2'),
        url('/static/fonts/basis-grotesque-regular.ttf') format('truetype');
-  font-weight: normal;
+  font-weight: Light;
   font-style: normal;
 }
 
@@ -55,17 +55,24 @@ body {
 .logo {
   margin: 0 auto;
   width: 200px;
-  height: 50px;
-  background: center center url('/static/images/graces-line-logo.png') no-repeat;
+  height: 13px;
+  background: center center url('/static/images/graces-logo.png') no-repeat;
+  background-size: contain;
 }
 
-.form-container {
+.flex-container {
   flex: 1;
 
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.overlay-text {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
 }
 
 .form {
@@ -158,19 +165,19 @@ body {
 }
 
 h1 {
-  font-family: "Graces Serif";
   font-size: 64px;
-  line-height: 1em;
-  margin: 0 0 10px 0;
-  color: #2D3854;
+  line-height: 1.1em;
+  letter-spacing: 1px;
+  margin: 0 0 20px 0;
+  color: #000;
   text-align: center;
 }
 
 h2 {
   font-size: 18px;
-  line-height: 18px;
+  line-height: 1em;
   margin: 0 0 30px 0;
-  color: #8E949E;
+  color: #555;
   text-align: center;
 }
 
@@ -207,5 +214,12 @@ h2 {
 
   .footer-right {
     text-align: center;
+  }
+}
+
+@media only screen and (max-width: 799px) {
+   /* h1 scaling */
+  h1 {
+    font-size: 42px;
   }
 }
