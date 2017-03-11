@@ -1,10 +1,24 @@
 @font-face {
   font-family: CircularStd-Book;
   src: url("/static/fonts/CircularStd-Book.otf") format("opentype");
+  font-family: Basis-Off-White;
+  src: url("/static/fonts/basis-grotesque-off-white.eot");
+  src: url("/static/fonts/basis-grotesque-off-white.ttf");
+  src: url("/static/fonts/basis-grotesque-off-white.woff");
+  src: url("/static/fonts/basis-grotesque-off-white.woff2");
+  font-family: Basis;
+  src: url("static/fonts/basis-grotesque-regular.eot");
+  src: url("static/fonts/basis-grotesque-regular.ttf");
+  src: url("static/fonts/basis-grotesque-regular.woff");
+  src: url("static/fonts/basis-grotesque-regular.woff2");
+  font-family: Lyon;
+  src: url("static/fonts/LyonDisplay-Light-Web.eot");
+  src: url("static/fonts/LyonDisplay-Light-Web.woff");
+  src: url("static/fonts/LyonDisplay-Light-Web.woff2");
 }
 
 html {
-  font-family: Lyon, sans-serif;
+  font-family: Basis, sans-serif;
   background: #fff;
   font-size: 17px;
 }
@@ -25,7 +39,7 @@ body {
 
 .logo {
   margin: 0 auto;
-  width: 50px;
+  width: 200px;
   height: 50px;
   background: center center url('/static/images/graces-line-logo.png') no-repeat;
 }
@@ -145,11 +159,12 @@ h2 {
 }
 
 .footer {
+  font-family: Basis, sans-serif;
   font-size: 13px;
   color: #8E949E;
   width: 90%;
   padding: 40px 0;
-  max-width: 815px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
