@@ -60,9 +60,12 @@ video#bgvid {
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background: url(polina.jpg) no-repeat;
+    background: none no-repeat;
     background-size: cover; 
 }
+/*
+
+    */
 
 /* CONTAINER TYPES */
 
@@ -70,12 +73,24 @@ video#bgvid {
 }
 
 .header {
-  margin: 40px 0;
+  padding: 30px 0;
+  background-color: none;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0);
+   -webkit-transition-duration: 0.3s;
+  transition-duration: 0.4s;
+  -webkit-transition-property: color, background-color, box-shadow;
+  transition-property: color, background-color;
 }
 
-.logo {
+.header:hover {
+  background-color: rgba(0, 0, 0, .9);
+  box-shadow: 0px 1px 5px rgba(20, 20, 20, 0.1);
+}
+
+
+#splashlogo.logo {
   margin: 0 auto;
-  width: 200px;
+  width: 220px;
   height: 13px;
   background: center center url('/static/images/graces-logo-negative.png') no-repeat;
   background-size: contain;
@@ -83,23 +98,34 @@ video#bgvid {
 
 .flex-container {
   flex: 1;
-
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px 15px;
 }
 
-.overlay-text {
-  width: 100%;
-  max-width: 799px;
-  margin: 0 auto;
+.narrow {
+  width: 61.8%;
 }
 
 .form {
   width: 100%;
-  max-width: 335px;
+  max-width: 445px;
   margin: 0 auto;
+}
+
+.button {
+  height: 45px;
+  font-size: 14px;
+  padding: 0 20px;
+  margin-top: 10px;
+  border: 0;
+  border-radius: 100px;
+  background: #B5A39F;
+  float: center;
 }
 
 #mc_embed_signup form {
@@ -115,7 +141,8 @@ video#bgvid {
   border: 0;
   border-bottom: 1px solid #E7E7E7;
   padding: 15px 0;
-  color: #8E949E;
+  color: #555;
+  letter-spacing: .5px;
   border-radius: 0;
 }
 
@@ -152,7 +179,7 @@ video#bgvid {
   padding: 0 20px;
   margin-top: 10px;
   border-radius: 100px;
-  background: #2D3854;
+  background: #B5A39F;
 }
 
 @media screen and (min-width: 800px) { 
@@ -192,28 +219,52 @@ a {
 }
 
 h1 {
-  font-size: 68px;
+  font-family: 'Graces Serif', serif;
+  font-size: 48px;
+  font-weight: 400;
   line-height: 1.1em;
-  letter-spacing: 2px;
+  letter-spacing: .5px;
   margin: 0 0 30px 0;
-  color: #000;
+  color: #444;
+}
+
+.giant {
+  font-size: 72px;
+}
+
+.left {
+  text-align: left;
+}
+
+.center {
   text-align: center;
 }
 
 h2 {
-  font-family: 'Graces Serif', serf;
-  font-size: 26px;
-  line-height: 1em;
-  letter-spacing: 1px;
+  font-family: 'Graces Sans', serf;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 1.3em;
+  letter-spacing: .5px;
   margin: 0 0 30px 0;
   color: #000;
   text-align: center;
 }
 
-.video-overlay {
-    font-family: 'Graces Sans Off White';
+h3 {
+  font-family: 'Graces Sans', Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 1.2em;
+  letter-spacing: 0;
+  margin: 0 0 30px 0;
+  color: #555;
+  text-align: inherit;
+}
+
+.overlay-text {
     color: rgba(255, 255, 255, .9);
-    text-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  
 }
 
 .footer {
@@ -253,8 +304,11 @@ h2 {
 }
 
 @media only screen and (max-width: 799px) {
-   /* h1 scaling */
   h1 {
-    font-size: 42px;
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 1em;
   }
 }
+
